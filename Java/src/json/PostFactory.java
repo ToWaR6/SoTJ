@@ -131,8 +131,8 @@ public class PostFactory {
 	public static void main(String[] args) {
 		
 		//read file in filePath
-		File file = new File(args[0]);
-		if (file.isFile() && args[0].endsWith(".json")) {
+		File file = new File("/home/loic/Documents/SoTJ/Crawler/output");
+		if (file.isFile()) {
 			getQuestions(file);
 		} else if (file.isDirectory()) {
 			//for all the ".json" files in the directory at filePath -> getQuestion()
